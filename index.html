@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>VL IV CV</title>
+    <link rel="stylesheet" href="styles.css ">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <table cellspacing="20" >
-        <tr>
-            <td><img src="./images/IMG_1378.JPG" alt="My Photo" width="250px"></td>
-            <td><h1>Владислав Иванчиков</h1>
+<div class="container">
+
+    <div class="info">
+        <div class="ava">
+            <img class="avatar" src="./images/IMG_1378.JPG" alt="My Photo">
+        </div>
+        <div class="info-text">
+            <h2>Владислав Иванчиков</h2>
             <p><strong>Junior JavaScript Developer</strong></p>
-            <p><em>Я люблю программировать, играть в баскетбол и отдыхать на природке !</em></p></td>
-        </tr>
-    </table>
-<hr>
-    <h2>Мои социальные сети</h2>
-        <ol>
-            <li><a href="https://github.com/Vladislav-Ivanchikov" target="_blank">Github</a></li>
-            <li><a href="https://instagram.com/kalianbulvar" target="_blank">Instagram</a></li>
-        </ol>
-    <h2>Мои хобби</h2>
-        <ul type="circle">
+            <p>Я люблю программировать, играть в баскетбол и отдыхать на природке !</p>
+            <a href="https://github.com/Vladislav-Ivanchikov" target="_blank">Github</a>
+            |
+            <a href="https://instagram.com/kalianbulvar" target="_blank">Instagram</a>
+
+        </div>
+
+    </div>
+
+    <div class="card yellow">
+        <h2>Мои хобби</h2>
+        <ul>
+            <li>Программирование</li>
             <li>Баскетбол</li>
             <li>Играть в компьютерные игры</li>
             <li>Музыка</li>
             <li>Криптовалюта</li>
         </ul>
-<hr>
-    <h2>Образование</h2>
+    </div>
+
+
+    <div class="card green">
+        <h2>Образование</h2>
         <table>
-            <tr>
-                <th>Учреждение образования</th>
-                <th>Специальность</th>
-                <th>Год</th>
-            </tr>
             <tr>
                 <td>Барановичский Государственный Университет</td>
                 <td>Геоэкология</td>
@@ -45,20 +52,53 @@
                 <td>2021 - 2023</td>
             </tr>
         </table>
-<hr>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя...">
-        <br>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email...">
-        <br>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea name="message" id="message" cols="50" rows="5" placeholder="Введите сообщение..."></textarea>
-        <br>
-        <input type="submit" value="Связаться">
-    </form>
+    </div>
+
+    <div class="card red">
+        <h2>Опыт работы</h2>
+        <table>
+            <tr>
+                <td>Гимназия №56 г.Гомеля</td>
+                <td>Педагог-организатор</td>
+            </tr>
+            <tr>
+                <td>ЗАО "Альфа-Банк"</td>
+                <td>Специалист Контакт-центра</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card blue">
+        <h2>Навыки</h2>
+        <ul>
+            <li>HTML, CSS, SASS</li>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя...">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email...">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea name="message" id="message" cols="50" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+            <input class="btn" type="submit" value="Связаться">
+        </form>
+    </div>
+</div>
 </body>
 </html>
